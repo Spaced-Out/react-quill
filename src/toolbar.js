@@ -145,7 +145,6 @@ var QuillToolbar = React.createClass({
 		var children = this.props.items.map(this.renderItem);
 		var html = children.map(ReactDOMServer.renderToStaticMarkup).join('');
 		return React.DOM.div({
-			ref: 'toolbarNode',
 			className: this.getClassName(),
 			dangerouslySetInnerHTML: { __html:html }
 		});
